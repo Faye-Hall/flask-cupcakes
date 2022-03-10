@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}Cupcake List{% endblock %}
+
+{% block content %}
+<div id="container">
+    <h1>Cupcakes</h1>
+
+    <div id="h3-div">
+        <h3>All Cupcakes</h3>
+    </div>
+    <div id="cupcake-list">
+    </div>
+    <form id="new-cupcake-form">
+        <label for="flavor">Flavor:</label><br>
+        <input type="text" id="flavor" name="flavor"><br>
+        <label for="size">Size:</label><br>
+        <input type="text" id="size" name="size"><br>
+        <label for="rating">Rating:</label><br>
+        <input type="number" id="rating" name="rating"><br>
+        <label for="image">Image:</label><br>
+        <input type="url" id="image" name="image"><br>
+        <button>Submit</button>
+    </form>
+</div>
+{% endblock %}
